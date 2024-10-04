@@ -62,6 +62,8 @@ int main()
     cout << "The circumference of your circle is: " << circumference << endl;
 
     cout << "The area of your circle is: " << area << endl;
+
+    return 0;
 }
 
 double calcDistance(double x1, double y1, double x2, double y2)
