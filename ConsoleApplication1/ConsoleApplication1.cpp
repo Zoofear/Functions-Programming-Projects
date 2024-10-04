@@ -23,21 +23,34 @@ int main()
 
     double inflation1, inflation2;  //These variables are the inflation rates of this year and the year before
 
+    inflationInput(price0, price1, price2)
 }
 
 void inflationInput(double& x, double& y, double& z)
 {
-    cout << "What is the price of your item currently?" << endl;
+    cout << "What is the price of your item currently?" << endl;        //Getting this years item price
 
     cin >> x;
 
-    cout << "What is the price of your item last year?" << endl;
+    cout << "What is the price of your item last year?" << endl;        //Getting the previous years item price
 
     cin >> y;
 
-    cout << "What is the price of your item two years ago?" << endl;
+    cout << "What is the price of your item two years ago?" << endl;    //Getting the item price from two years ago
 
     cin >> z;
 }
 
-void inflationCalc(double x, double y, double z, )
+void inflationCalc(double x, double y, double z, double& calc1, double& calc2)
+{
+    calc1 = (x - y) / y;                                                        //This is the function to calculate the first inflation rate
+
+    calc2 = (y - z) / z;                                                        //This is the function to calculate the second inflation rate
+}
+
+void inflationOutput(double calc1, double calc2)
+{
+    cout << setprecision(2) << "The inflation rate for this year is: " << calc1 << "%" << endl;     //Outputting the inflation rate for this year
+
+    cout << "The inflation rate for the previous year was: " << calc2 << "%" << endl;               //Outputting the inflation rate for the previous year
+}
