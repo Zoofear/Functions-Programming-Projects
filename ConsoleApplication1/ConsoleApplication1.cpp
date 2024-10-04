@@ -1,5 +1,5 @@
-// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// ConsoleApplication1.cpp : This file contains the project 1: propertiess of a circle
+// This file is to take two cardinal points from the user and tell them the radius, circumference, and area of their circle using said cardinal points
 
 #include <iostream>
 #include <iomanip>
