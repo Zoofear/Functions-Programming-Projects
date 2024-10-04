@@ -1,5 +1,5 @@
-// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// ConsoleApplication1.cpp : This file contains the program 2: Inflation trend
+// This project takes the price of an item over 3 consecutive years and uses it to determine the inflation rate for those 3 years 
 
 #include <iostream>
 #include <iomanip>
@@ -8,7 +8,7 @@ using namespace std;
 
     //Prototype functions
 
-void inflationInput(double& x, double& y, double& z);                              //This function asks the user for input of the price of the item during the current year and the last two years
+void inflationInput(double& x, double& y, double& z);                           //This function asks the user for input of the price of the item during the current year and the last two years
 
 void inflationCalc(double x, double y, double z, double& calc1, double& calc2); //This function calculates the two inflations for this year and the year before that 
 
