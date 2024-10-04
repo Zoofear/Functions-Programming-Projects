@@ -81,16 +81,16 @@ double calcRadius(double x1, double y1, double x2, double y2)
     return radius;
 }
 
-double calcCircumference(double radius, double pi)
+double calcCircumference(double r, double pi)
 {
-    double circumference = (2 * pi * radius);                       //Circumference formula
+    double circumference = (2 * pi * r);                       //Circumference formula
 
     return circumference;
 }
 
-double calcArea(double radius, double pi)
+double calcArea(double r, double pi)
 {
-    double area = pow((pi * radius), 2);                            //Area formula
+    double area = pow((pi * r), 2);                            //Area formula
 
     return area;
 }
