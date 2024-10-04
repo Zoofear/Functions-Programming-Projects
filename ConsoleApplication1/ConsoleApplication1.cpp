@@ -2,22 +2,42 @@
 //
 
 #include <iostream>
-#include <ionmanip>
+#include <iomanip>
 
 using namespace std;
 
+    //Prototype functions
+
+void inflationInput(double& x, double& y, double);                              //This function asks the user for input of the price of the item during the current year and the last two years
+
+void inflationCalc(double x, double y, double z, double& calc1, double& calc2); //This function calculates the two inflations for this year and the year before that 
+
+void inflationOutput(double calc1, double calc2);                               //This function outputs the two inflations from this year and the previous year
+
+
 int main()
 {
-    std::cout << "Hello World!\n";
+        //variables
+    
+    double price0, price1, price2;  //These variables are the prices of an item from the current year, the year before, and the year before that
+
+    double inflation1, inflation2;  //These variables are the inflation rates of this year and the year before
+
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+void inflationInput(double& x, double& y, double& z)
+{
+    cout << "What is the price of your item currently?" << endl;
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+    cin >> x;
+
+    cout << "What is the price of your item last year?" << endl;
+
+    cin >> y;
+
+    cout << "What is the price of your item two years ago?" << endl;
+
+    cin >> z;
+}
+
+void inflationCalc(double x, double y, double z, )
