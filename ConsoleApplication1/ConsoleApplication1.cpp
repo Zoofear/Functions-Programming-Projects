@@ -2,6 +2,9 @@
 //
 
 #include <iostream>
+#include <ionmanip>
+
+using namespace std;
 
 int main()
 {
